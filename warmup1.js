@@ -70,20 +70,19 @@ function counting(repeat) {
 // but returns the shortest word instead.
 
 function shortestWord() {
-if (str1.length > str2.length) {
-          return str1;
-        } else {
-          return str2;
-        }
-      
-function Larger(str1, str2) {
-if (str1.length > str2.length) {
-          return str1;
-        } else {
-          return str2;
-        }
-      }
-  
+  if (str1.length > str2.length) {
+    return str1;
+  } else {
+    return str2;
+  }
+
+  function Larger(str1, str2) {
+    if (str1.length > str2.length) {
+      return str1;
+    } else {
+      return str2;
+    }
+  }
 }
 
 // 1 - Complete the function cube that returns the cube of x:
@@ -130,3 +129,59 @@ console.log(scoreToGrade(13));
 // repeatString('dog', 1); // => 'dog'
 // repeatString('dog', 2); // => 'dog' + 'dog' => 'dogdog'
 // repeatString('dog', 3); // => 'dog' + 'dog' + 'dog' => 'dogdogdog'
+// 1-write a function that returns the product of any number by 3.
+function product3(a, b) {
+  var b = 3;
+  return a * b;
+}
+console.log(product3(7));
+// 2-complete the following function multiply to return the result of multiplying of x and y
+function multiply(x, y) {
+  return x * y;
+}
+console.log(multiply(8, 7));
+// 3-complete the following function that Convert Fahrenheit to Celsius if the module for converting is
+// 	(5/9) * (fahrenheit-32);
+function convert(x) {
+  var y = 5 / 9;
+  return y * (x - 32);
+}
+console.log(convert(40));
+// 4-Define a function named "sqArea", and make it display square area if you knew the length of its side
+function sqArea(x) {
+  return x * x;
+}
+console.log(sqArea(5));
+// 1) Write a function named greaterNum that:
+// - takes 2 arguments, both numbers.
+// - returns whichever number is the greater (higher) number.
+// ex greaterNum(5, 10) => "The greater number of 5 and 10 is 10."
+function greaterNum(a, b) {
+  if (a > b) {
+    return a;
+  } else {
+    return b;
+  }
+}
+// - Use a while loop to add up the numbers from x to y.
+// ex sum(1,5) => 15
+function sum(x) {
+  var y = 10;
+  return x * y;
+}
+// 2) Write a function named isEven using  for loop that
+// -  iterate from x to y.
+// -  return array contain the even values,
+//  ex:  isEven(1,10) => [2,4,6,8,10]
+
+function isEven() {
+  var sum = [];
+  var x = 0;
+  var y = 0;
+  while (y <= 5) {
+    x += 2;
+    y += 1;
+    sum.push(x);
+  }
+  return x;
+}
